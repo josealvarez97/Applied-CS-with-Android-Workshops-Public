@@ -17,4 +17,4 @@ Other resources:
 - ![Anagrams and Hashmaps](https://youtu.be/eMymKAFYaCs)
 - ![Anagrams and Hashsets](https://youtu.be/O-zTuD8JRbE)
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo"
+[logo]: https://josealvarez97.github.io/Applied-CS-with-Android/images/AndroidWorkshop-ASCENT.jpg "Logo"
