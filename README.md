@@ -5,7 +5,7 @@ WELCOME TO THE FIRST WORKSHOP ON DEVELOPING ANDROID GAMES BY THE ACM MICO!!!
 
 
 
-- The official workshop guide can be found by signing up ![here](https://cswithandroid.withgoogle.com/ "Applied CS with Android"). We will be doing the anagrams workshop.
+- The official workshop guide can be found by signing up [here](https://cswithandroid.withgoogle.com/ "Applied CS with Android"). We will be doing the anagrams workshop.
 
 - The official workshop starter code may be download [here](Applied-CS-with-Android-Workshops-Public/anagrams_starter.zip) or directly from the official guide in the previous link.
 
@@ -14,7 +14,7 @@ WELCOME TO THE FIRST WORKSHOP ON DEVELOPING ANDROID GAMES BY THE ACM MICO!!!
 
 Other resources:
 
-- ![Anagrams and Hashmaps](https://youtu.be/eMymKAFYaCs)
-- ![Anagrams and Hashsets](https://youtu.be/O-zTuD8JRbE)
+- [Anagrams and Hashmaps](https://youtu.be/eMymKAFYaCs)
+- [Anagrams and Hashsets](https://youtu.be/O-zTuD8JRbE)
 
 [logo]: https://josealvarez97.github.io/Applied-CS-with-Android/images/AndroidWorkshop-ASCENT.jpg "Logo"
