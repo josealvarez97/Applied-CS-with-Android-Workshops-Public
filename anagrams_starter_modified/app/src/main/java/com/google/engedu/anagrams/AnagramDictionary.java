@@ -19,6 +19,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -28,14 +29,28 @@ public class AnagramDictionary {
     private static final int DEFAULT_WORD_LENGTH = 3;
     private static final int MAX_WORD_LENGTH = 7;
     private Random random = new Random();
+    ArrayList<String> wordlist = new ArrayList<>();
+
+
 
     public AnagramDictionary(Reader reader) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         String line;
         while((line = in.readLine()) != null) {
             String word = line.trim();
+            wordlist.add(word);
+
         }
     }
+    public String sortletters(String word){
+        String original = word ;
+        char[] chars = original.toCharArray();
+        Arrays.sort(chars);
+        String sorted = new String(chars);
+        return sorted;
+    }
+
+    public
 
     public boolean isGoodWord(String word, String base) {
         return true;
@@ -43,7 +58,12 @@ public class AnagramDictionary {
 
     public List<String> getAnagrams(String targetWord) {
         ArrayList<String> result = new ArrayList<String>();
+        String original = targetWord;
+        String Idriss;
+        Idriss = sortletters(targetWord);
         return result;
+
+
     }
 
     public List<String> getAnagramsWithOneMoreLetter(String word) {
