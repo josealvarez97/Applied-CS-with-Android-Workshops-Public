@@ -28,7 +28,17 @@ public class AnagramDictionary {
     private static final int DEFAULT_WORD_LENGTH = 3;
     private static final int MAX_WORD_LENGTH = 7;
     private Random random = new Random();
+    // MILESTONE 1: Declare WORD LIST (wordList) here. Just a list with all the words in the file.
 
+    // MILESTONE 1: Declare WORD SET (wordSet) here. It will allow us to rapidly verify whether a word is a valid dictionary word.
+
+    // MILESTONE 1: Declare LETTERS TO WORD (lettersToWord) here. It will allow us to group anagrams together.
+
+    // MILESTONE 3: Declare SIZE TO WORDS (sizeToWords) here. It will allow us to map words to their lengths.
+
+    // MILESTONE 3: Declare wordLength as explained in the official workshop guide.
+
+    // MILESTONE 1:
     public AnagramDictionary(Reader reader) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         String line;
@@ -37,20 +47,46 @@ public class AnagramDictionary {
         }
     }
 
+
+    // MILESTONE 2:
+    // Here you will verify that a word is a valid dictionary word (i.e., in wordSet)
+    // And that a word does not contain the base word as a substring.
+    // Check official workshop guide for more details and examples.
     public boolean isGoodWord(String word, String base) {
         return true;
     }
 
     public List<String> getAnagrams(String targetWord) {
+        // You need an array list for storing the anagrams of the target word.
         ArrayList<String> result = new ArrayList<String>();
+
+        // MILESTONE 1:
+        // Try iterating through the list (wordList, checking one by one each element)
+        // and finding all matching anagrams. (Don't forget to add them to
+        // the array list where you actually plan to store the anagrams!).
+        // Read the official workshop guide for more details.
+
+
+
+
         return result;
     }
+
+    // MILESTONE 2:
+    // Takes a string and finds all anagrams that can be formed by adding one letter to that word.
+    // Try doing it on your own, but if get stuck check the experimental code section for a couple of ideas on how to do this!
+    // Also, read the official workshop guide for more details.
 
     public List<String> getAnagramsWithOneMoreLetter(String word) {
         ArrayList<String> result = new ArrayList<String>();
-        return result;
+        return result; // DO NOT FORGET TO UPDATE defaultAction in AnagramActivity to
+        // invoke getAnagramsWithOneMore instead of getAnagrams
     }
 
+    // MILESTONE 2:
+    // To make the tame more interesting, pick a random starting point in wordList array
+    // and check each word in the array until you find one that has at least MIN_NUM_ANAGRAMS.
+    // Read the official workshop guide for more details.
     public String pickGoodStarterWord() {
         return "stop";
     }
