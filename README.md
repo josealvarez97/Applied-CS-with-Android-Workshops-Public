@@ -1,5 +1,5 @@
 
-WELCOME TO THE FIRST WORKSHOP ON DEVELOPING ANDROID GAMES BY THE ACM MICO!!!
+## WELCOME TO THE WORKSHOP ON DEVELOPING ANDROID GAMES BY THE ACM MICO!!!
 - The **official workshop *guide*** can be found by signing up [here](https://cswithandroid.withgoogle.com/ "Applied CS with Android"). We will be doing the anagrams workshop.
 
 - The **official workshop *starter code*** may be download [here](../master/anagrams_starter.zip) or directly from the official guide in the previous link.
