@@ -11,5 +11,6 @@ WELCOME TO THE FIRST WORKSHOP ON DEVELOPING ANDROID GAMES BY THE ACM MICO!!!
 - [Anagrams and Hashmaps](https://youtu.be/eMymKAFYaCs)
 - [Anagrams and Hashsets](https://youtu.be/O-zTuD8JRbE)
 - Know that [Stack Overflow](https://stackoverflow.com/) exists (if you didn't already)
+- [Workshop slides](https://docs.google.com/presentation/d/1Wfitx8jwdjB_j4uYW5xecSVI1Nw83pTW_YAOhC7Ejok/edit?usp=sharing)
 
 ![logo](http://www.techretard.com/wp-content/uploads/2017/06/Android-Games-logo.png "Logo")
