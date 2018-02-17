@@ -18,7 +18,9 @@ package com.google.engedu.anagrams;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -29,7 +31,7 @@ public class AnagramDictionary {
     private static final int MAX_WORD_LENGTH = 7;
     private Random random = new Random();
     // MILESTONE 1: Declare WORD LIST (wordList) here. Just a list with all the words in the file.
-
+    ArrayList<String> wordList = new ArrayList<>();
     // MILESTONE 1: Declare WORD SET (wordSet) here. It will allow us to rapidly verify whether a word is a valid dictionary word.
 
     // MILESTONE 1: Declare LETTERS TO WORD (lettersToWord) here. It will allow us to group anagrams together.
@@ -44,6 +46,9 @@ public class AnagramDictionary {
         String line;
         while((line = in.readLine()) != null) {
             String word = line.trim();
+            wordList.add(word);
+
+
         }
     }
 
@@ -53,23 +58,39 @@ public class AnagramDictionary {
     // And that a word does not contain the base word as a substring.
     // Check official workshop guide for more details and examples.
     public boolean isGoodWord(String word, String base) {
+
+        if (word.contains(base)) {
+            return false;
+        }
         return true;
     }
 
+    public String sortLetters(String aWord ){
+        char[] charsArray = aWord.toCharArray();
+        Arrays.sort(charsArray);
+        String sorted = new String(charsArray);
+        return sorted;
+
+    }
     public List<String> getAnagrams(String targetWord) {
         // You need an array list for storing the anagrams of the target word.
         ArrayList<String> result = new ArrayList<String>();
+        String originalSortedVersion = sortLetters(targetWord);
+        for (int i = 0; i < wordList.size(); i++) {
+            String wordToCheck = wordList.get(i);
 
+            if (originalSortedVersion.equals(sortLetters(wordToCheck))){
+                result.add(wordToCheck);
+            }
+        }
+
+        return result;
         // MILESTONE 1:
         // Try iterating through the list (wordList, checking one by one each element)
         // and finding all matching anagrams. (Don't forget to add them to
         // the array list where you actually plan to store the anagrams!).
         // Read the official workshop guide for more details.
 
-
-
-
-        return result;
     }
 
     // MILESTONE 2:
@@ -88,6 +109,9 @@ public class AnagramDictionary {
     // and check each word in the array until you find one that has at least MIN_NUM_ANAGRAMS.
     // Read the official workshop guide for more details.
     public String pickGoodStarterWord() {
-        return "stop";
+        Integer randomWordIndex = random.nextInt(wordList.size());
+        String randomWord = wordList.get(randomWordIndex)
+        return randomWord;
+
     }
 }
